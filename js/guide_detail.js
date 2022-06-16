@@ -29,6 +29,9 @@ require([
     let $img = $('#guide-detail');
     let order =  methods.getUrlParam('order');
     document.title = details.filter( item => item.order == order)[0].title;
-    $img.prop('src', `../../images/guide/guide_detail${order}.png`).css('display','block');
+    // $img.prop('src', `../../images/guide/guide_detail${order}.png`).css('display','block');
+    methods.canvasDataURL(`../../images/guide/guide_detail${order}.png`, {quality:0.2}, function(base64){
+      $img.val(base64).css('display','block');
+    })
   })
 })
