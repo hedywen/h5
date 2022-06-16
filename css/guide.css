@@ -1,0 +1,41 @@
+.container {
+  padding: 0 0.3rem 0.6rem;
+}
+.container .title {
+  font-size: 0.32rem;
+  color: #262A3B;
+}
+.container .row {
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+}
+.container .item {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+.container .item .item-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
+}
+.container .item .item-label {
+  line-height: 0.4rem;
+  font-size: 0.28rem;
+  color: #717288;
+}
